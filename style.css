@@ -3,8 +3,8 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0d1117;
-    color: #c9d1d9;
+    background-color: #a3bbfb;
+    color: #959696;
     text-align: center;
 }
 
@@ -14,8 +14,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #161b22;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .nav-links {
@@ -26,18 +26,18 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #c9d1d9;
+    color: #959696;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #58a6ff;
+    color: #7a7a7a;
 }
 
 /* Header */
 header {
-    background: #161b22;
+    background: #ffffff;
     padding: 50px 0;
     text-align: center;
 }
@@ -45,12 +45,12 @@ header {
 header h1 {
     font-size: 3rem;
     margin: 0;
-    color: #58a6ff;
+    color: #959696;
 }
 
 header p {
     font-size: 1.2rem;
-    color: #8b949e;
+    color: #959696;
 }
 
 /* Sections */
@@ -58,20 +58,20 @@ section {
     max-width: 800px;
     margin: 40px auto;
     padding: 30px;
-    background: #161b22;
+    background: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #58a6ff;
+    color: #959696;
     font-size: 2rem;
 }
 
 p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #c9d1d9;
+    color: #959696;
 }
 
 /* Skills */
@@ -82,10 +82,11 @@ p {
 }
 
 .skill-category {
-    background-color: #21262d;
+    background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 8px;
     transition: transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .skill-category:hover {
@@ -93,13 +94,13 @@ p {
 }
 
 .skill-category h3 {
-    color: #58a6ff;
+    color: #959696;
 }
 
 .skill-category ul {
     list-style: none;
     padding: 0;
-    color: #c9d1d9;
+    color: #959696;
 }
 
 .skill-category li {
@@ -115,11 +116,12 @@ p {
 }
 
 .project {
-    background: #21262d;
+    background: #ffffff;
     padding: 20px;
     border-radius: 10px;
     width: 45%;
     transition: transform 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .project:hover {
@@ -149,24 +151,24 @@ p {
 label {
     display: block;
     margin-bottom: 0.5rem;
-    color: #c9d1d9;
+    color: #959696;
 }
 
 input,
 textarea {
     width: 100%;
     padding: 0.8rem;
-    background-color: #21262d;
-    border: 1px solid #30363d;
+    background-color: #ffffff;
+    border: 1px solid #959696;
     border-radius: 6px;
-    color: #c9d1d9;
+    color: #959696;
     font-family: 'Inter', sans-serif;
 }
 
 input:focus,
 textarea:focus {
     outline: none;
-    border-color: #58a6ff;
+    border-color: #7a7a7a;
 }
 
 textarea {
@@ -178,7 +180,7 @@ textarea {
 .btn {
     display: inline-block;
     padding: 0.8rem 1.5rem;
-    background-color: #238636;
+    background-color: #959696;
     color: #ffffff;
     text-decoration: none;
     border-radius: 6px;
@@ -188,15 +190,15 @@ textarea {
 }
 
 .btn:hover {
-    background-color: #2ea043;
+    background-color: #7a7a7a;
 }
 
 /* Footer */
 footer {
     margin-top: 20px;
     padding: 20px;
-    background: #161b22;
-    color: #8b949e;
+    background: #ffffff;
+    color: #959696;
     text-align: center;
 }
 
@@ -205,14 +207,29 @@ footer {
 }
 
 .social-links a {
-    color: #8b949e;
+    color: #959696;
     font-size: 1.5rem;
     margin: 0 1rem;
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #58a6ff;
+    color: #7a7a7a;
+}
+
+/* Notification Styles */
+.notification {
+    background-color: #ffffff;
+    color: #959696;
+    border-left: 4px solid #959696;
+}
+
+.notification.success {
+    border-left-color: #7a7a7a;
+}
+
+.notification.error {
+    border-left-color: #ff6b6b;
 }
 
 /* Responsive Design */
@@ -233,19 +250,4 @@ footer {
     header h1 {
         font-size: 2rem;
     }
-}
-
-/* Notification Styles */
-.notification {
-    background-color: #21262d;
-    color: #c9d1d9;
-    border-left: 4px solid #58a6ff;
-}
-
-.notification.success {
-    border-left-color: #238636;
-}
-
-.notification.error {
-    border-left-color: #f85149;
 }
