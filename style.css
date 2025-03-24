@@ -1,6 +1,6 @@
 /* Base styles */
 body {
-    font-family: 'Prata', sans-serif;
+    font-family: 'Georgia', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #a3bbfb;
@@ -14,7 +14,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #ffffff;
+    background-color: #a3bbfb;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -45,7 +45,7 @@ header {
 header h1 {
     font-size: 3rem;
     margin: 0;
-    color: #a3bbfb;
+    color: #0d0d0d;
 }
 
 header p {
@@ -267,7 +267,7 @@ footer {
 
 .social-btn {
     display: inline-flex;
-    align-items: center;
+    align-items:center;
     padding: 0.5rem 1rem;
     background-color: #ffffff;
     color: #959696;
