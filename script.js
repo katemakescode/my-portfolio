@@ -1,4 +1,5 @@
 // Simple form handling
+console.log('Script loaded!')
 document.addEventListener('DOMContentLoaded', () => {
     // Content for different pages/sections
     const pageContent = {
@@ -18,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <li>🌍 Based in [Your Location]</li>
                                 <li>💼 Open to Job Opportunities</li>
                                 <li>📚 Currently learning [Technology]</li>
-                                <li>🎯 2024 Goal: [Your Goal]</li>
+                                <li>🎯 2025 Goal: [Your Goal]</li>
                             </ul>
                         </div>
                     </div>
