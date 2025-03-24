@@ -2,68 +2,125 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Content for different pages/sections
     const pageContent = {
-        github: `
+        about: `
             <div class="content-section">
-                <h2>My GitHub Projects</h2>
-                <div class="github-projects">
-                    <div class="project-card">
-                        <h3>Project 1</h3>
-                        <p>Description of your GitHub project</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                        </div>
-                        <a href="#" class="repo-link">View Repository</a>
+                <h2>About Me</h2>
+                <div class="about-container">
+                    <div class="profile-image">
+                        <img src="your-image.jpg" alt="Profile Picture">
                     </div>
-                    <div class="project-card">
-                        <h3>Project 2</h3>
-                        <p>Description of another project</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Django</span>
+                    <div class="about-text">
+                        <p>Hi, I'm [Your Name], a self-taught software developer passionate about technology and problem-solving.</p>
+                        <p>After working in management at Flannels, I discovered a passion for technology and automation. I am now pursuing a career in web development to create innovative solutions.</p>
+                        <div class="personal-info">
+                            <h3>Quick Facts</h3>
+                            <ul>
+                                <li>🌍 Based in [Your Location]</li>
+                                <li>💼 Open to Job Opportunities</li>
+                                <li>📚 Currently learning [Technology]</li>
+                                <li>🎯 2024 Goal: [Your Goal]</li>
+                            </ul>
                         </div>
-                        <a href="#" class="repo-link">View Repository</a>
                     </div>
                 </div>
             </div>
         `,
-        linkedin: `
+        skills: `
             <div class="content-section">
-                <h2>Professional Experience</h2>
-                <div class="experience-timeline">
-                    <div class="experience-item">
-                        <h3>Current Position</h3>
-                        <p class="company">Company Name</p>
-                        <p class="date">2023 - Present</p>
-                        <ul>
-                            <li>Achievement 1</li>
-                            <li>Achievement 2</li>
-                        </ul>
+                <h2>Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend Development</h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <span class="skill-name">React</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="experience-item">
-                        <h3>Previous Role</h3>
-                        <p class="company">Previous Company</p>
-                        <p class="date">2021 - 2023</p>
-                        <ul>
-                            <li>Achievement 1</li>
-                            <li>Achievement 2</li>
-                        </ul>
+                    <div class="skill-category">
+                        <h3>Backend Development</h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar">
+                                <span class="skill-name">Node.js</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <span class="skill-name">Python</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Technologies</h3>
+                        <div class="tools-grid">
+                            <span class="tool">Git</span>
+                            <span class="tool">VS Code</span>
+                            <span class="tool">npm</span>
+                            <span class="tool">Webpack</span>
+                            <span class="tool">Firebase</span>
+                        </div>
                     </div>
                 </div>
             </div>
         `,
-        twitter: `
+        projects: `
             <div class="content-section">
-                <h2>Latest Updates</h2>
-                <div class="twitter-feed">
-                    <div class="tweet">
-                        <p>Latest tweet about tech and development</p>
-                        <span class="date">2 hours ago</span>
+                <h2>My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="project1.jpg" alt="Project 1">
+                        </div>
+                        <div class="project-content">
+                            <h3>Project Name 1</h3>
+                            <p>Detailed description of your first project and what technologies you used.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn">Live Demo</a>
+                                <a href="#" class="btn">GitHub</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tweet">
-                        <p>Another interesting update about your journey</p>
-                        <span class="date">2 days ago</span>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="project2.jpg" alt="Project 2">
+                        </div>
+                        <div class="project-content">
+                            <h3>Project Name 2</h3>
+                            <p>Detailed description of your second project and its key features.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">HTML</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn">Live Demo</a>
+                                <a href="#" class="btn">GitHub</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -71,67 +128,94 @@ document.addEventListener('DOMContentLoaded', () => {
         contact: `
             <div class="content-section">
                 <h2>Contact Me</h2>
-                <form id="contact-form" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" required>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Let's Connect!</h3>
+                        <p>Feel free to reach out for collaborations or just a friendly hello</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>your.email@example.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+44 123 456 7890</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Your Location</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
             </div>
         `
     };
 
-    // Create a content container if it doesn't exist
-    let contentContainer = document.querySelector('.content-container');
-    if (!contentContainer) {
-        contentContainer = document.createElement('div');
-        contentContainer.className = 'content-container';
-        document.querySelector('main') || document.body.appendChild(contentContainer);
+    // Handle navigation
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const contentContainer = document.querySelector('.content-container');
+
+    // Function to update content
+    function updateContent(pageId) {
+        contentContainer.style.opacity = '0';
+        setTimeout(() => {
+            contentContainer.innerHTML = pageContent[pageId];
+            contentContainer.style.opacity = '1';
+            
+            // Update active state of navigation links
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === pageId) {
+                    link.classList.add('active');
+                }
+            });
+        }, 300);
     }
 
-    // Handle social button clicks
-    const socialButtons = document.querySelectorAll('.social-btn');
-    socialButtons.forEach(button => {
-        button.addEventListener('click', (e) => {
+    // Add click handlers to navigation links
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
             e.preventDefault();
-            
-            // Remove active class from all buttons
-            socialButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
-            button.classList.add('active');
-
-            // Determine which content to show
-            let contentType = '';
-            if (button.href.includes('github')) contentType = 'github';
-            else if (button.href.includes('linkedin')) contentType = 'linkedin';
-            else if (button.href.includes('twitter')) contentType = 'twitter';
-            else if (button.href.includes('mailto')) contentType = 'contact';
-
-            // Show the content with animation
-            contentContainer.style.opacity = '0';
-            setTimeout(() => {
-                contentContainer.innerHTML = pageContent[contentType];
-                contentContainer.style.opacity = '1';
-            }, 300);
+            const pageId = e.target.getAttribute('href').slice(1);
+            updateContent(pageId);
+            history.pushState(null, '', `#${pageId}`);
         });
     });
 
-    // Handle contact form submission
+    // Handle browser back/forward buttons
+    window.addEventListener('popstate', () => {
+        const pageId = window.location.hash.slice(1) || 'about';
+        updateContent(pageId);
+    });
+
+    // Handle form submission
     document.addEventListener('submit', (e) => {
         if (e.target.id === 'contact-form') {
             e.preventDefault();
             const formData = {
                 name: document.getElementById('name').value,
                 email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
                 message: document.getElementById('message').value
             };
             console.log('Form submitted:', formData);
@@ -139,6 +223,10 @@ document.addEventListener('DOMContentLoaded', () => {
             e.target.reset();
         }
     });
+
+    // Load initial content based on URL hash or default to 'about'
+    const initialPage = window.location.hash.slice(1) || 'about';
+    updateContent(initialPage);
 });
 
 // Simple notification function
@@ -168,3 +256,4 @@ function showNotification(message, type) {
         document.body.removeChild(notification);
     }, 3000);
 }
+
